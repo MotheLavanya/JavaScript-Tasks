@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Positive, Negative, or Zero
+        // Write a program to check if a number is positive, negative, or zero.
+
+        const a = prompt("Enter a number: ")
+        if(a> 0){
+            console.log("Postive number");
+        }
+        else if(a<0){
+            console.log("Negative Number")
+        }
+        else{
+            console.log("Zero")
+        }
+
+        // Largest of Two Numbers
+        // Take two numbers from the user and print the largest one.
+
+        const m = prompt("Enter a 1st number: ")
+        const n = prompt("Enter a 2nd number: ")
+        if(m>n){
+            console.log("a is largest number")
+        }else{
+            console.log("b is largest number")
+        }
+
+        // Largest of Three Numbers
+        // Write a program to find the largest among three numbers.
+
+        let c = prompt("Enter a number: ");
+        let d = prompt("Enter a number: ");
+        let e = prompt("Enter a number: ");
+        if(c>d && c>e){
+            console.log("c is largest number");
+        }
+        else if(d>c && d>e){
+            console.log("d is largest number");
+        }
+        else{
+            console.log("e is largest number");
+        }
+
+        // Divisible by 5 and 11
+        // Check if the entered number is divisible by both 5 and 11.
+        let b = prompt("Enter a number: ")
+        if(b%5==0 && b%11==0){
+            console.log("a is divisible by 5 and 11");
+        }
+        else{
+            console.log("a is not divisible by 5 and 11");
+        }
+
+        // Grade Checker
+        // Take a student's mark (0–100) and print the grade:
+        // 90–100: A
+        // 75–89: B
+        // 50–74: C
+        // Below 50: F
+        let grade = prompt("Enter a grade: ")
+        if(grade<=100 && grade>=90){
+            result = "A"
+        }
+        else if(grade<=89 && grade>=75){
+            result = "B"
+        }
+        else if(grade<=74 && grade>=50){
+            result = "C"
+        }
+        else{
+            result = "F"
+        }
+        console.log(result)
+
+        // Age Group Classification
+        // Take age as input and print:
+
+
+        // 0–12: Child
+        // 13–19: Teen
+        // 20–59: Adult
+        // 60 and above: Senior
+        let age = prompt("Enter a age: ")
+        if(age<= 12 && age>=0){
+            group = "Child"
+        }
+        else if(age<=19 && age>= 13){
+            group = "Teen"
+        }
+        else if(age<=59 && age>= 20){
+            group = "Teen"
+        }
+        else{
+            group = "Senior"
+        }
+        console.log(group)
+
+        //  7. Check Voting Eligibility          
+        // Ask the user for their age and print whether they are eligible to vote (age ≥ 18).
+        let vote_age = prompt("Enter a age: ")
+        if(vote_age>= 18){
+            eligibility = "Eligible to vote"
+        }
+        else{
+            eligibility = "Not eligible to vote"
+        }
+        console.log(eligibility)
+
+        // Using if-else ladder / switch
+        // Simple Calculator
+        // Take two numbers and an operator (+, -, *, /) from the user and perform the operation using a switch statement.
+        let num1 = prompt("Enter a number: ")
+        let num2 = prompt("Enter a number: ")
+        let operator = prompt("Enter a operator: ")
+        switch(operator){
+            case("+"):
+            result = (num1+num2)
+            break;
+            case("-"):
+            result = (num1 - num2)
+            break;
+            case("*"):
+            result = (num1 * num2)
+            break;
+            case("/"):
+            result = (num1 / num2)
+            break;
+            default:
+            result = "Invalid Number"
+        }
+        console.log(result)
+
+        // Day of Week
+        // Take a number (1–7) and print the corresponding day of the week using a switch statement.
+        day = prompt("Enter a day: ")
+        switch(day){
+            case("1"):
+            result = "Sunday"
+            break;
+            case("2"):
+            result = "Monday"
+            break;
+            case("3"):
+            result = "Tuesday"
+            break;
+            case("4"):
+            result = "Wednesday"
+            break;
+            case("5"):
+            result = "Thursday"
+            break;
+            case("6"):
+            result = "Friday"
+            break;
+            case("7"):
+            result = "saturday"
+            break;
+            default:
+            result = "Enter a Invalid day"
+        }
+        console.log(result)
+
+        // Traffic Light Signal
+        // Take a color as input (red, yellow, green) and display the action:
+        // Red → Stop
+        // Yellow → Wait
+        // Green → Go
+        let color = prompt("Enter a color: ")
+        switch(color){
+            case("Red"):
+            result = "Stop"
+            break;
+            case("Yellow"):
+            result = "Wait"
+            break;
+            case("Green"):
+            result = "Go"
+            break;
+            default:
+            result = "Enter valid color"
+        }
+        console.log(result)
+    </script>
+
+</body>
+</html>
