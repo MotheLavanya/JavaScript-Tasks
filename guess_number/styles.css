@@ -1,0 +1,51 @@
+html,body{
+    margin-top: 6%;
+    margin-left: 23%;
+    background-color: rgb(239, 199, 214);
+}
+div{
+    height: 280px;
+    width: 250px;
+    /* border: 2px solid; */
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 19px;
+    padding-top: 20px;
+}
+img{
+    margin-left:75px;
+    height: 100px;
+    width: 120px;
+    margin-top: 20px;
+}
+#user_input{
+    padding: 5px 7px;
+    margin-left: 10px;
+    width: 210px;
+    margin-bottom: 10px;
+}
+button{
+    width: 225px;
+    margin-left: 10px;
+    height: 28px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+.guess_text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+#message{
+    color: rgb(18, 52, 224);
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 21px;
+}
+#container{
+    width: 290px;
+    height: 320px;
+    background-color: black;
+}
